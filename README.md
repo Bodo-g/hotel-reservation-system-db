@@ -129,6 +129,9 @@ Insert sample data:
 source Insert.sql;
 
 
+---
+
+
 🐍 2. Run Python Scripts (Optional)
 cd scripts
 Run:
@@ -137,11 +140,15 @@ python insert_reservations.py
 python insert_rooms_hotel.py
 python reservation_details.py
 
+---
+
 🌐 3. Run PHP Interface (Optional)
 Move php+css to XAMPP htdocs
 Start Apache & MySQL
 Open:
 http://localhost/php+css/
+
+---
 
 
 📊 ERD Diagram
@@ -155,11 +162,15 @@ Experience with advanced SQL features
 Ability to implement real-world business logic
 Backend-oriented system thinking
 Data simulation and testing techniques
+
+---
 🔮 Future Improvements
 Add indexing for performance optimization
 Implement stored procedures
 Build REST API (Node.js / Flask)
 Connect to a full web application
+---
+
 👨‍💻 Author
 
 Abdulrahman Mohamed Gaber
