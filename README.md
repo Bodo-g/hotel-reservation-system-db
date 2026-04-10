@@ -82,25 +82,22 @@ Custom Python scripts were used to generate realistic data:
 This simulates a real-world system and helps in testing scalability and performance.
 
 ---
-
 ## 📁 Project Structure
+
+```
 hotel-reservation-system-db/
-│
 ├── schema.sql
 ├── Insert.sql
-│
 ├── scripts/
-│ ├── insert_customers.py
-│ ├── insert_reservations.py
-│ ├── insert_rooms_hotel.py
-│ └── reservation_details.py
-│
+│   ├── insert_customers.py
+│   ├── insert_reservations.py
+│   ├── insert_rooms_hotel.py
+│   └── reservation_details.py
 ├── docs/
-│ └── erd.png
-│
+│   └── erd.png
 ├── php+css/
-│
 └── README.md
+```
 
 
 
