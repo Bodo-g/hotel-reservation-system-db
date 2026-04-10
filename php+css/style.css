@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.login-box {
+    background-color: white;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 0 auto;
+}
+
+.login-box h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0059b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #003d80;
+}
+
+.login-box p {
+    margin-top: 15px;
+}
+
+.login-box a {
+    color: #0059b3;
+    text-decoration: none;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0059b3;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d80;
+}

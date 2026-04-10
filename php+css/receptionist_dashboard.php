@@ -1,0 +1,93 @@
+<?php
+session_start();
+if (!isset($_SESSION['emp_id']) || $_SESSION['role'] !== 'Receptionist') {
+    header("Location: employee_login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Receptionist Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f7fb;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard {
+            background-color: white;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            margin: 12px 0;
+            padding: 14px;
+            background-color: #0059b3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #003d80;
+        }
+
+        .orange {
+            background-color: #0059b3;
+        }
+
+        .orange:hover {
+            background-color: #003d80;
+        }
+
+        .logout {
+            background-color: #c0392b;
+        }
+
+        .logout:hover {
+            background-color: #a8322a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>Welcome Receptionist</h2>
+
+    <a href="approve_reservations.php" class="button">View / Approve Reservations</a>
+    <a href="manual_reservation.php" class="button orange">Book for Customer</a>
+    <a href="register_customer.php" class="button">Register New Customer</a>
+    <a href="cancel_reservation.php" class="button orange">Cancel Reservation</a>
+    <a href="logout_employee.php" class="button logout">Logout</a>
+</div>
+
+</body>
+</html>
